@@ -1,6 +1,5 @@
 ## Supported tags and respective `Dockerfile` links
 
-* [`python3.9-alpine` _(Dockerfile)_](https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/python3.9-alpine.dockerfile)
 * [`python3.9-alpine3.13` _(Dockerfile)_](https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/python3.9-alpine3.13.dockerfile)
 * [`python3.9-slim` _(Dockerfile)_](https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/python3.9-slim.dockerfile)
 * [`python3.9` _(Dockerfile)_](https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/python3.9.dockerfile)
