@@ -1,29 +1,22 @@
-[![Test](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/workflows/Test/badge.svg)](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/actions?query=workflow%3ATest) [![Deploy](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/workflows/Deploy/badge.svg)](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/actions?query=workflow%3ADeploy)
+[![Test](https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker/workflows/Test/badge.svg)](https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker/actions?query=workflow%3ATest) [![Deploy](https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker/workflows/Deploy/badge.svg)](https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker/actions?query=workflow%3ADeploy)
 
 ## Supported tags and respective `Dockerfile` links
 
-* [`python3.8`, `latest` _(Dockerfile)_](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/python3.8.dockerfile)
-* [`python3.7`, _(Dockerfile)_](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/python3.7.dockerfile)
-* [`python3.6` _(Dockerfile)_](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/python3.6.dockerfile)
-* [`python3.8-slim` _(Dockerfile)_](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/python3.8-slim.dockerfile)
-* [`python3.8-alpine3.10` _(Dockerfile)_](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/python3.8-alpine3.10.dockerfile)
-* [`python3.7-alpine3.8` _(Dockerfile)_](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/python3.7-alpine3.8.dockerfile)
-* [`python3.6-alpine3.8` _(Dockerfile)_](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/python3.6-alpine3.8.dockerfile)
-* [`python3.9-alpine` _(Dockerfile)_](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/python3.9-alpine.dockerfile)
-* [`python3.9-alpine3.12` _(Dockerfile)_](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/python3.9-alpine3.12.dockerfile)
-* [`python3.9-slim` _(Dockerfile)_](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/python3.9-slim.dockerfile)
-* [`python3.9` _(Dockerfile)_](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/python3.9.dockerfile)
+* [`python3.9-alpine` _(Dockerfile)_](https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/python3.9-alpine.dockerfile)
+* [`python3.9-alpine3.13` _(Dockerfile)_](https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/python3.9-alpine3.13.dockerfile)
+* [`python3.9-slim` _(Dockerfile)_](https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/python3.9-slim.dockerfile)
+* [`python3.9` _(Dockerfile)_](https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/python3.9.dockerfile)
 
 
-**Note**: Note: There are [tags for each build date](https://hub.docker.com/r/tiangolo/uvicorn-gunicorn-fastapi/tags). If you need to "pin" the Docker image version you use, you can select one of those tags. E.g. `tiangolo/uvicorn-gunicorn-fastapi:python3.7-2019-10-15`.
+**Note**: Note: There are [tags for each build date](https://hub.docker.com/r/antonapetrov/uvicorn-gunicorn-fastapi/tags). If you need to "pin" the Docker image version you use, you can select one of those tags. E.g. `antonapetrov/uvicorn-gunicorn-fastapi:python3.9`.
 
 # uvicorn-gunicorn-fastapi
 
-[**Docker**](https://www.docker.com/) image with [**Uvicorn**](https://www.uvicorn.org/) managed by [**Gunicorn**](https://gunicorn.org/) for high-performance [**FastAPI**](https://fastapi.tiangolo.com/) web applications in **[Python](https://www.python.org/) 3.6 and above** with performance auto-tuning. Optionally in a slim version or based on Alpine Linux.
+[**Docker**](https://www.docker.com/) image with [**Uvicorn**](https://www.uvicorn.org/) managed by [**Gunicorn**](https://gunicorn.org/) for high-performance [**FastAPI**](https://fastapi.antonapetrov.com/) web applications in **[Python](https://www.python.org/) 3.9 and above** with performance auto-tuning. Optionally in a slim version or based on Alpine Linux.
 
-**GitHub repo**: [https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker)
+**GitHub repo**: [https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker](https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker)
 
-**Docker Hub image**: [https://hub.docker.com/r/tiangolo/uvicorn-gunicorn-fastapi/](https://hub.docker.com/r/tiangolo/uvicorn-gunicorn-fastapi/)
+**Docker Hub image**: [https://hub.docker.com/r/antonapetrov/uvicorn-gunicorn-fastapi/](https://hub.docker.com/r/antonapetrov/uvicorn-gunicorn-fastapi/)
 
 ## Description
 
@@ -64,7 +57,7 @@ The key features are:
 
 <small>* estimation based on tests on an internal development team, building production applications.</small>
 
-### `tiangolo/uvicorn-gunicorn-fastapi`
+### `antonapetrov/uvicorn-gunicorn-fastapi`
 
 This image will set a sensible configuration based on the server it is running on (the amount of CPU cores available) without making sacrifices.
 
@@ -72,9 +65,9 @@ It has sensible defaults, but you can configure it with environment variables or
 
 There is also a slim version and another one based on Alpine Linux. If you want one of those, use one of the tags from above.
 
-### `tiangolo/uvicorn-gunicorn`
+### `antonapetrov/uvicorn-gunicorn`
 
-This image (`tiangolo/uvicorn-gunicorn-fastapi`) is based on [**tiangolo/uvicorn-gunicorn**](https://github.com/tiangolo/uvicorn-gunicorn-docker).
+This image (`antonapetrov/uvicorn-gunicorn-fastapi`) is based on [**antonapetrov/uvicorn-gunicorn**](https://github.com/antonapetrov/uvicorn-gunicorn-docker).
 
 That image is what actually does all the work.
 
@@ -82,11 +75,11 @@ This image just installs FastAPI and has the documentation specifically targeted
 
 If you feel confident about your knowledge of Uvicorn, Gunicorn and ASGI, you can use that image directly.
 
-### `tiangolo/uvicorn-gunicorn-starlette`
+### `antonapetrov/uvicorn-gunicorn-starlette`
 
-There is a sibling Docker image: [**tiangolo/uvicorn-gunicorn-starlette**](https://github.com/tiangolo/uvicorn-gunicorn-starlette-docker)
+There is a sibling Docker image: [**antonapetrov/uvicorn-gunicorn-starlette**](https://github.com/antonapetrov/uvicorn-gunicorn-starlette-docker)
 
-If you are creating a new [**Starlette**](https://www.starlette.io/) web application and you want to discard all the additional features from FastAPI you should use [**tiangolo/uvicorn-gunicorn-starlette**](https://github.com/tiangolo/uvicorn-gunicorn-starlette-docker) instead.
+If you are creating a new [**Starlette**](https://www.starlette.io/) web application and you want to discard all the additional features from FastAPI you should use [**antonapetrov/uvicorn-gunicorn-starlette**](https://github.com/antonapetrov/uvicorn-gunicorn-starlette-docker) instead.
 
 **Note**: FastAPI is based on Starlette and adds several features on top of it. Useful for APIs and other cases: data validation, data conversion, documentation with OpenAPI, dependency injection, security/authentication and others.
 
@@ -95,7 +88,7 @@ If you are creating a new [**Starlette**](https://www.starlette.io/) web applica
 * You don't need to clone the GitHub repo. You can use this image as a base image for other images, using this in your `Dockerfile`:
 
 ```Dockerfile
-FROM tiangolo/uvicorn-gunicorn-fastapi:python3.7
+FROM antonapetrov/uvicorn-gunicorn-fastapi:python3.7
 
 COPY ./app /app
 ```
@@ -120,7 +113,7 @@ docker build -t myimage ./
 * Create a `Dockerfile` with:
 
 ```Dockerfile
-FROM tiangolo/uvicorn-gunicorn-fastapi:python3.7
+FROM antonapetrov/uvicorn-gunicorn-fastapi:python3.7
 
 COPY ./app /app
 ```
@@ -184,7 +177,7 @@ Now you can go to <a href="http://192.168.99.100/docs" target="_blank">http://19
 
 You will see the automatic interactive API documentation (provided by <a href="https://github.com/swagger-api/swagger-ui" target="_blank">Swagger UI</a>):
 
-![Swagger UI](https://fastapi.tiangolo.com/img/index/index-01-swagger-ui-simple.png)
+![Swagger UI](https://fastapi.antonapetrov.com/img/index/index-01-swagger-ui-simple.png)
 
 ### Alternative API docs
 
@@ -192,7 +185,7 @@ And you can also go to <a href="http://192.168.99.100/redoc" target="_blank">htt
 
 You will see the alternative automatic documentation (provided by <a href="https://github.com/Rebilly/ReDoc" target="_blank">ReDoc</a>):
 
-![ReDoc](https://fastapi.tiangolo.com/img/index/index-02-redoc-simple.png)
+![ReDoc](https://fastapi.antonapetrov.com/img/index/index-02-redoc-simple.png)
 
 ## Dependencies and packages
 
@@ -213,7 +206,7 @@ Let's say you have a project managed with [Poetry](https://python-poetry.org/), 
 Then you could have a `Dockerfile` like:
 
 ```Dockerfile
-FROM tiangolo/uvicorn-gunicorn-fastapi:python3.7
+FROM antonapetrov/uvicorn-gunicorn-fastapi:python3.7
 
 # Install Poetry
 RUN curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | POETRY_HOME=/opt/poetry python && \
@@ -320,7 +313,7 @@ You can set it like:
 docker run -d -p 80:80 -e GUNICORN_CONF="/app/custom_gunicorn_conf.py" myimage
 ```
 
-You can use the [config file from the base image](https://github.com/tiangolo/uvicorn-gunicorn-docker/blob/master/docker-images/gunicorn_conf.py) as a starting point for yours.
+You can use the [config file from the base image](https://github.com/antonapetrov/uvicorn-gunicorn-docker/blob/master/docker-images/gunicorn_conf.py) as a starting point for yours.
 
 #### `WORKERS_PER_CORE`
 
@@ -558,7 +551,7 @@ For example, if you have a custom TLS/SSL certificate that you want to use, you 
 docker run -d -p 80:8080 -e GUNICORN_CMD_ARGS="--keyfile=/secrets/key.pem --certfile=/secrets/cert.pem" -e PORT=443 myimage
 ```
 
-**Note**: instead of handling TLS/SSL yourself and configuring it in the container, it's recommended to use a "TLS Termination Proxy" like [Traefik](https://docs.traefik.io/). You can read more about it in the [FastAPI documentation about HTTPS](https://fastapi.tiangolo.com/deployment/#https).
+**Note**: instead of handling TLS/SSL yourself and configuring it in the container, it's recommended to use a "TLS Termination Proxy" like [Traefik](https://docs.traefik.io/). You can read more about it in the [FastAPI documentation about HTTPS](https://fastapi.antonapetrov.com/deployment/#https).
 
 #### `PRE_START_PATH`
 
@@ -673,8 +666,8 @@ All the image tags, configurations, environment variables and application option
 
 ### 0.6.0
 
-* Add docs about installing and pinning dependencies. PR [#41](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/pull/41).
-* Add `slim` version. PR [#40](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/pull/40).
+* Add docs about installing and pinning dependencies. PR [#41](https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker/pull/41).
+* Add `slim` version. PR [#40](https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker/pull/40).
 * Update and refactor bringing all the new features from the base image. Includes:
     * Centralize, simplify, and deduplicate code and setup
     * Move CI to GitHub actions
@@ -688,28 +681,28 @@ All the image tags, configurations, environment variables and application option
         * `ERROR_LOG`
         * `GUNICORN_CMD_ARGS`
         * `MAX_WORKERS`
-    * PR [#39](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/pull/39).
-* Disable pip cache during installation. PR [#38](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/pull/38).
-* Migrate local development from Pipenv to Poetry. PR [#34](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/pull/34).
-* Add docs for custom `PRE_START_PATH` env var. PR [#33](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/pull/33).
+    * PR [#39](https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker/pull/39).
+* Disable pip cache during installation. PR [#38](https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker/pull/38).
+* Migrate local development from Pipenv to Poetry. PR [#34](https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker/pull/34).
+* Add docs for custom `PRE_START_PATH` env var. PR [#33](https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker/pull/33).
 
 ### 0.5.0
 
-* Refactor tests to use env vars and add image tags for each build date, like `tiangolo/uvicorn-gunicorn-fastapi:python3.7-2019-10-15`. PR [#17](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/pull/17).
-* Upgrade Travis. PR [#9](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/pull/9).
+* Refactor tests to use env vars and add image tags for each build date, like `antonapetrov/uvicorn-gunicorn-fastapi:python3.7-2019-10-15`. PR [#17](https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker/pull/17).
+* Upgrade Travis. PR [#9](https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker/pull/9).
 
 ### 0.4.0
 
-* Add support for live auto-reload with an additional custom script `/start-reload.sh`, check the [updated documentation](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker#development-live-reload). PR <a href="https://github.com/tiangolo/uvicorn-gunicorn-docker/pull/6" target="_blank">#6</a> in parent image.
+* Add support for live auto-reload with an additional custom script `/start-reload.sh`, check the [updated documentation](https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker#development-live-reload). PR <a href="https://github.com/antonapetrov/uvicorn-gunicorn-docker/pull/6" target="_blank">#6</a> in parent image.
 
 ### 0.3.0
 
 * Set `WORKERS_PER_CORE` by default to `1`, as it shows to have the best performance on benchmarks.
-* Make the default web concurrency, when `WEB_CONCURRENCY` is not set, to a minimum of 2 workers. This is to avoid bad performance and blocking applications (server application) on small machines (server machine/cloud/etc). This can be overridden using `WEB_CONCURRENCY`. This applies for example in the case where `WORKERS_PER_CORE` is set to `1` (the default) and the server has only 1 CPU core. PR <a href="https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker/pull/6" target="_blank">#6</a> and PR <a href="https://github.com/tiangolo/uvicorn-gunicorn-docker/pull/5" target="_blank">#5</a> in parent image.
+* Make the default web concurrency, when `WEB_CONCURRENCY` is not set, to a minimum of 2 workers. This is to avoid bad performance and blocking applications (server application) on small machines (server machine/cloud/etc). This can be overridden using `WEB_CONCURRENCY`. This applies for example in the case where `WORKERS_PER_CORE` is set to `1` (the default) and the server has only 1 CPU core. PR <a href="https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker/pull/6" target="_blank">#6</a> and PR <a href="https://github.com/antonapetrov/uvicorn-gunicorn-docker/pull/5" target="_blank">#5</a> in parent image.
 
 ### 0.2.0
 
-* Make `/start.sh` run independently, reading and generating used default environment variables. And remove `/entrypoint.sh` as it doesn't modify anything in the system, only reads environment variables. PR <a href="https://github.com/tiangolo/uvicorn-gunicorn-docker/pull/4" target="_blank">#4</a> in parent image.
+* Make `/start.sh` run independently, reading and generating used default environment variables. And remove `/entrypoint.sh` as it doesn't modify anything in the system, only reads environment variables. PR <a href="https://github.com/antonapetrov/uvicorn-gunicorn-docker/pull/4" target="_blank">#4</a> in parent image.
 
 ### 0.1.0
 
