@@ -661,50 +661,11 @@ All the image tags, configurations, environment variables and application option
 
 ### Latest Changes
 
-### 0.6.0
+### 0.7.0
 
-* Add docs about installing and pinning dependencies. PR [#41](https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker/pull/41).
-* Add `slim` version. PR [#40](https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker/pull/40).
-* Update and refactor bringing all the new features from the base image. Includes:
-    * Centralize, simplify, and deduplicate code and setup
-    * Move CI to GitHub actions
-    * Add Python 3.8 (and Alpine)
-    * Add new configs and docs:
-        * `WORKER_CLASS`
-        * `TIMEOUT`
-        * `KEEP_ALIVE`
-        * `GRACEFUL_TIMEOUT`
-        * `ACCESS_LOG`
-        * `ERROR_LOG`
-        * `GUNICORN_CMD_ARGS`
-        * `MAX_WORKERS`
-    * PR [#39](https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker/pull/39).
-* Disable pip cache during installation. PR [#38](https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker/pull/38).
-* Migrate local development from Pipenv to Poetry. PR [#34](https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker/pull/34).
-* Add docs for custom `PRE_START_PATH` env var. PR [#33](https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker/pull/33).
-
-### 0.5.0
-
-* Refactor tests to use env vars and add image tags for each build date, like `antonapetrov/uvicorn-gunicorn-fastapi:python3.7-2019-10-15`. PR [#17](https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker/pull/17).
-* Upgrade Travis. PR [#9](https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker/pull/9).
-
-### 0.4.0
-
-* Add support for live auto-reload with an additional custom script `/start-reload.sh`, check the [updated documentation](https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker#development-live-reload). PR <a href="https://github.com/antonapetrov/uvicorn-gunicorn-docker/pull/6" target="_blank">#6</a> in parent image.
-
-### 0.3.0
-
-* Set `WORKERS_PER_CORE` by default to `1`, as it shows to have the best performance on benchmarks.
-* Make the default web concurrency, when `WEB_CONCURRENCY` is not set, to a minimum of 2 workers. This is to avoid bad performance and blocking applications (server application) on small machines (server machine/cloud/etc). This can be overridden using `WEB_CONCURRENCY`. This applies for example in the case where `WORKERS_PER_CORE` is set to `1` (the default) and the server has only 1 CPU core. PR <a href="https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker/pull/6" target="_blank">#6</a> and PR <a href="https://github.com/antonapetrov/uvicorn-gunicorn-docker/pull/5" target="_blank">#5</a> in parent image.
-
-### 0.2.0
-
-* Make `/start.sh` run independently, reading and generating used default environment variables. And remove `/entrypoint.sh` as it doesn't modify anything in the system, only reads environment variables. PR <a href="https://github.com/antonapetrov/uvicorn-gunicorn-docker/pull/4" target="_blank">#4</a> in parent image.
-
-### 0.1.0
-
-* Add support for `/app/prestart.sh`.
+* Add Python 3.9 (and Alpine 3.13)
 
 ## License
 
-This project is licensed under the terms of the MIT license.
+This project is forked from https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker and licensed under the terms of the MIT license.
+Author of original project is Sebastián Ramírez https://github.com/tiangolo
