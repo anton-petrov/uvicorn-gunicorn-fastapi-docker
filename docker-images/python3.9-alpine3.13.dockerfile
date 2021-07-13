@@ -1,4 +1,4 @@
-FROM antonapetrov/uvicorn-gunicorn:python3.9-slim
+FROM antonapetrov/uvicorn-gunicorn:python3.9-alpine3.13
 
 LABEL maintainer="Anton Petrov<anton.a.petrov@gmail.com>"
 
