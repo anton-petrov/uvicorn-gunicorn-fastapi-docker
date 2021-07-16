@@ -11,7 +11,7 @@
 
 [**Docker**](https://www.docker.com/) image with [**Uvicorn**](https://www.uvicorn.org/) managed by [**Gunicorn**](https://gunicorn.org/) for high-performance [**FastAPI**](https://fastapi.antonapetrov.com/) web applications in **[Python](https://www.python.org/) 3.9 and above** with performance auto-tuning. Optionally in a slim version or based on Alpine Linux.
 
-**GitHub repo**: [https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker](https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker)
+**GitHub repo**: [https://github.com/anton-petrov/uvicorn-gunicorn-fastapi-docker](https://github.com/anton-petrov/uvicorn-gunicorn-fastapi-docker)
 
 **Docker Hub image**: [https://hub.docker.com/r/antonapetrov/uvicorn-gunicorn-fastapi/](https://hub.docker.com/r/antonapetrov/uvicorn-gunicorn-fastapi/)
 
