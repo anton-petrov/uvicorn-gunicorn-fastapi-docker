@@ -72,20 +72,12 @@ This image just installs FastAPI and has the documentation specifically targeted
 
 If you feel confident about your knowledge of Uvicorn, Gunicorn and ASGI, you can use that image directly.
 
-### `antonapetrov/uvicorn-gunicorn-starlette`
-
-There is a sibling Docker image: [**antonapetrov/uvicorn-gunicorn-starlette**](https://github.com/antonapetrov/uvicorn-gunicorn-starlette-docker)
-
-If you are creating a new [**Starlette**](https://www.starlette.io/) web application and you want to discard all the additional features from FastAPI you should use [**antonapetrov/uvicorn-gunicorn-starlette**](https://github.com/antonapetrov/uvicorn-gunicorn-starlette-docker) instead.
-
-**Note**: FastAPI is based on Starlette and adds several features on top of it. Useful for APIs and other cases: data validation, data conversion, documentation with OpenAPI, dependency injection, security/authentication and others.
-
 ## How to use
 
 * You don't need to clone the GitHub repo. You can use this image as a base image for other images, using this in your `Dockerfile`:
 
 ```Dockerfile
-FROM antonapetrov/uvicorn-gunicorn-fastapi:python3.7
+FROM antonapetrov/uvicorn-gunicorn-fastapi:python3.9
 
 COPY ./app /app
 ```
@@ -110,7 +102,7 @@ docker build -t myimage ./
 * Create a `Dockerfile` with:
 
 ```Dockerfile
-FROM antonapetrov/uvicorn-gunicorn-fastapi:python3.7
+FROM antonapetrov/uvicorn-gunicorn-fastapi:python3.9
 
 COPY ./app /app
 ```
