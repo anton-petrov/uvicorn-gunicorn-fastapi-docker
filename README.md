@@ -64,7 +64,7 @@ There is also a slim version and another one based on Alpine Linux. If you want 
 
 ### `antonapetrov/uvicorn-gunicorn`
 
-This image (`antonapetrov/uvicorn-gunicorn-fastapi`) is based on [**antonapetrov/uvicorn-gunicorn**](https://github.com/antonapetrov/uvicorn-gunicorn-docker).
+This image (`antonapetrov/uvicorn-gunicorn-fastapi`) is based on [**anton-petrov/uvicorn-gunicorn**](https://github.com/anton-petrov/uvicorn-gunicorn-docker).
 
 That image is what actually does all the work.
 
