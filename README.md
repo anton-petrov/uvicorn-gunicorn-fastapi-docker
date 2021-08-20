@@ -6,6 +6,10 @@
 * [`mambaforge` _(Dockerfile)_](https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/mambaforge.dockerfile)
 * [`miniforge3` _(Dockerfile)_](https://github.com/antonapetrov/uvicorn-gunicorn-fastapi-docker/blob/master/docker-images/miniforge3.dockerfile)
 
+## Supported platforms
+
+* linux/amd64
+* linux/arm64
 
 **Note**: Note: There are [tags for each build date](https://hub.docker.com/r/antonapetrov/uvicorn-gunicorn-fastapi/tags). If you need to "pin" the Docker image version you use, you can select one of those tags. E.g. `antonapetrov/uvicorn-gunicorn-fastapi:python3.9`.
 
