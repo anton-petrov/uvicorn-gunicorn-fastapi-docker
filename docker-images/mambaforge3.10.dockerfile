@@ -1,4 +1,4 @@
-FROM antonapetrov/uvicorn-gunicorn:miniforge3
+FROM antonapetrov/uvicorn-gunicorn:mambaforge3.10
 
 LABEL maintainer="Anton Petrov<anton.a.petrov@gmail.com>"
 
