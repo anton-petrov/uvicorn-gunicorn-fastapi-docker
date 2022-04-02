@@ -11,6 +11,15 @@
 * linux/amd64
 * linux/arm64
 
+## How to build
+
+```
+cd PROJECT_DIR
+docker run -it --rm --privileged tonistiigi/binfmt --install all # only for Linux x86_64 
+docker buildx create --use --platform linux/arm64/v8,linux/amd64
+./scripts/build-push-all.sh
+```
+
 **Note**: Note: There are [tags for each build date](https://hub.docker.com/r/antonapetrov/uvicorn-gunicorn-fastapi/tags). If you need to "pin" the Docker image version you use, you can select one of those tags. E.g. `antonapetrov/uvicorn-gunicorn-fastapi:python3.9`.
 
 # uvicorn-gunicorn-fastapi
